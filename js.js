@@ -6,26 +6,26 @@ const users = [
         "username": "Yaser Habrat",
         "phone": "050-3443181",
         "email": "yaser@gmail.com",
-        "photo": "images/idme.png"
+        "photo": "idme.png"
     },
     {
         "id": "2235537",
         "username": "jana khalaily",
         "email": "jana@gmail.com",
         "phone": "050-8531114",
-        "photo": "images/idfe.png"
+        "photo": "idfe.png"
     },
     {
         "username": "Also bondeg",
         "email": "also@gmail.com",
         "phone": "050-1234567",
-        "photo": "images/idfe.png"
+        "photo": "idfe.png"
     },
     {
         "username": "Christian Levi",
         "email": "christian@gmail.com",
         "phone": "050-1112245",
-        "photo": "images/idme.png"
+        "photo": "idme.png"
     },
 ];
 
@@ -40,9 +40,9 @@ function loadContacts(filteredUsers = users) {
         item.innerHTML = `
             <img src="${elem.photo}" alt="Contact Photo" style="width:50px;height:50px;">
             <span>${elem.username}</span>
-            <button onclick="editContact(${ind})"><img src="images/edit.png" alt=""></button>
-            <button onclick="showContactInfo(${ind})"><img src="images/information.png" alt=""></button>
-            <button onclick="deleteContact(${ind})"><img src="images/delete.png" alt=""></button>
+            <button onclick="editContact(${ind})"><img src="edit.png" alt=""></button>
+            <button onclick="showContactInfo(${ind})"><img src="information.png" alt=""></button>
+            <button onclick="deleteContact(${ind})"><img src="delete.png" alt=""></button>
         `;
         list.append(item);
     });
